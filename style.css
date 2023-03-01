@@ -1,0 +1,238 @@
+:root {
+    --p-font: 1.125rem;
+    --main-color: rgb(255, 206, 0);
+}
+@font-face {
+    font-family: ar-font;
+    src: url(fonts/Cairo-SemiBold.ttf);
+}
+
+header {
+    /* height: calc(100vh - 20rem); */
+    position: relative;
+    background-image: url(images/header.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+header .logo::before {
+    content: "";
+    width: 130px;
+    height: 5px;
+    background-color: rgb(115, 107, 94);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 15em;
+    transform: translateX(calc(1rem + 2px));
+}
+
+header .text h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding: 1rem;
+    padding-bottom: 0;
+    line-height: 75px;
+}
+header .text p {
+    color: rgb(180, 173, 163);
+    font-size: var(--p-font);
+    text-align: center;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+}
+
+header .timer {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 90px auto;
+}
+
+header .timer .details {
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+header .timer span {
+    display: block;
+    text-align: center;
+}
+
+header .timer span:first-of-type {
+    color: var(--main-color);
+    font-size: 60px;
+}
+
+header .send-notification p {
+    font-size: 1.125rem;
+    color: #fff;
+    font-size: 1.125rem;
+    color: #fff;
+    margin: auto;
+    width: 20%;
+}
+
+header .input-group {
+    width: 30%;
+    margin: auto;
+    transform: translateY(30%);
+}
+
+header .send-notification .input-group button {
+    background-color: #ffce00;
+    padding: 13px 33px;
+    border-radius: 0;
+}
+
+header .send-notification .input-group input {
+    border-radius: 0;
+    border: 2px solid #e6e6e6;
+    color: #e6e6e6;
+    font-size: 18px;
+    text-align: right;
+}
+
+.invalid-feedback {
+    margin-bottom: -30px;
+}
+
+section.features {
+    padding: 100px 0;
+}
+
+section.features h2 {
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+section.features .row .d-flex {
+    border: 0.25rem solid #fafafa;
+    padding: 2.5rem 0.625rem;
+    margin-bottom: 1.25rem;
+    max-height: 11.875rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+section.features .row .d-flex:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+section.features .row .d-flex h4 {
+    font-size: 24px;
+    color: #555;
+}
+
+section.features .row .d-flex p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #a1a1a1;
+}
+
+section.features .row .col-md-6:nth-child(even) {
+    direction: ltr;
+}
+
+footer {
+    background-image: url(images/footer-bg.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer .notification {
+    background-color: rgba(255, 206, 0, 0.7);
+    padding: 70px 0;
+}
+
+footer .notification h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer .input-group {
+    width: 30%;
+    margin: auto;
+}
+
+footer .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    color: #c7c7c7;
+    border-color: #fff;
+}
+
+footer .input-group button {
+    border-radius: 0;
+    padding: 13px 33px;
+    background-color: #393939;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    padding-right: 10px;
+}
+
+:-moz-placeholder {
+    text-align: right;
+    padding-right: 10px;
+}
+
+footer .social-media {
+    background-color: rgb(57, 57, 57, 0.9);
+    padding: 100px 0 30px;
+}
+
+footer .social-media h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+footer .social-media .list-inline a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    display: block;
+    transition: 0.5;
+}
+
+footer .social-media .list-inline a:hover {
+    background-color: #fad32f;
+    color: rgb(57, 57, 57, 0.9);
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+footer .social-media a.email {
+    color: #b4b4b4;
+    text-decoration: none;
+    transition: .5s;
+}
+footer .social-media a.email:hover {
+    color: #fad32f;
+}
+
